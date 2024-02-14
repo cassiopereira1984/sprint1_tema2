@@ -6,11 +6,23 @@
 <?php
 
 // Defineix una variable de cada tipus: integer, double, string i boolean. Imprimeix-les per pantalla.
-$nombre = "Cassio"
+integer
+double 
+string 
+boolean
 
-echo "Mi nombre es" . $nombre ", gracias. "\n";
+//Després crea una constant que inclogui el teu nom i mostra-ho en format títol per pantalla.
+define("nombre", "Cassio");
+
+echo "Mi nombre es" . nombre ", gracias.";
+
+//Imprimeix per pantalla "Hello, World!" utilitzant una variable
+define("Eje", "Hello World");
+echo Eje;
+
+
+
 
 ?>
-
 </body>
 </html>
