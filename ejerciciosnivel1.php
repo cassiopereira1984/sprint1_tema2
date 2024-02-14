@@ -23,8 +23,16 @@ echo $hello;
 //Transforma tots els caràcters de l'string a majúscules i imprimeix en pantalla.
 echo strtoupper($hello);
 
+//Imprimeix per pantalla l'string en ordre invers de caràcters
+
+
 //Imprimeix per pantalla la mida (longitud) de la variable
 echo strlen($hello);
+
+/*o	Crea una nova variable amb el contingut “Aquest és el curs de PHP” i imprimeix per 
+pantalla la concatenació de tots dos strings.*/
+$curso = "Aquest és el curs de PHP.";
+echo $hello . $curso;
 
 /*EJERCICIO 3 Declara dues variables X i Y de tipus int, dues variables N i M de tipus double i 
 assigna a cadascuna un valor. A continuació, mostra per pantalla per a X i Y:*/
