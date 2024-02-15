@@ -40,29 +40,43 @@ echo $hello . $curso;
 
 /*EJERCICIO 3 Declara dues variables X i Y de tipus int, dues variables N i M de tipus double i 
 assigna a cadascuna un valor. A continuació, mostra per pantalla per a X i Y:*/
-
 $X, $Y = 4, 5;
 $N, $M = 6.5, 7.5;
 
 //El valor de cada variable.
-echo $X . $Y . $N . $M
+echo "Las variables son " . $X . $Y . $N . $M;
+
 //La suma.
-echo $X + $Y
-echo $N + $M
+echo "la suma es " . ($X + $Y);
+echo "la suma es " . ($N + $M);
 
 //La resta.
-echo $X - $Y
-echo $N - $M
+echo "la resta es " . ($X - $Y);
+echo "la resta es " . ($N - $M);
 
 //El producte.
-echo $X * $Y
-echo $N * $M
+echo "la multi es " . ($X * $Y);
+echo "la multi es " . ($N * $M);
 
 //El mòdul
-echo $X % $Y
-echo $N % $M
+echo "el modulo es " . ($X % $Y);
+echo "el modulo es " . ($N % $M);
 
+//Per a totes les variables (X, Y, N, M):
+//El doble de cada variable.
+echo "el doble de la variable X es " . ($X * 2);
+echo "el doble de la variable Y es " . ($Y * 2);
+echo "el doble de la variable N es " . ($N * 2);
+echo "el doble de la variable M es " . ($M * 2);
 
+//La suma de totes les variables.
+echo "la suma de todas las variables es " . ($X + $Y + $N + $M);
+
+//El producte de totes les variables.
+echo "La multiplicacion de la variable X es " . ($X * $X);
+echo "La multiplicacion de la variable Y es " . ($Y * $Y);
+echo "La multiplicacion de la variable N es " . ($N * $N);
+echo "La multiplicacion de la variable M es " . ($M * $M);
 
 ?>
 </body>
