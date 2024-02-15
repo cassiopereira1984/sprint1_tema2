@@ -40,8 +40,28 @@ echo $hello . $curso;
 
 /*EJERCICIO 3 Declara dues variables X i Y de tipus int, dues variables N i M de tipus double i 
 assigna a cadascuna un valor. A continuació, mostra per pantalla per a X i Y:*/
-integer X, Y = 4, 5;
-double N, M = 6, 7;
+
+$X, $Y = 4, 5;
+$N, $M = 6.5, 7.5;
+
+//El valor de cada variable.
+echo $X . $Y . $N . $M
+//La suma.
+echo $X + $Y
+echo $N + $M
+
+//La resta.
+echo $X - $Y
+echo $N - $M
+
+//El producte.
+echo $X * $Y
+echo $N * $M
+
+//El mòdul
+echo $X % $Y
+echo $N % $M
+
 
 
 ?>
