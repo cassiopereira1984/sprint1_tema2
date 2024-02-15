@@ -1,8 +1,3 @@
-<html>
-<header>
-    <title>Sprint1 Tema2</title>
-</header>
-<body>
 <?php
 
 // EJERCICIO1 Defineix una variable de cada tipus: integer, double, string i boolean. Imprimeix-les per pantalla.
@@ -114,6 +109,11 @@ if ($nUser > 10) {
     }
 }
 
+/*Escriure una funció per verificar el grau d'un/a estudiant d'acord amb la nota.
+Condicions:
+o	Si la nota és 60% o més, el grau hauria de ser Primera Divisió.
+o	Si la nota està entre 45% i 59%, el grau hauria de ser Segona Divisió.
+o	Si la nota està entre 33% to 44%, el grau hauria de ser Tercera Divisió.
+o	Si la nota és menor a 33%, l'estudiant reprovarà.*/
+
 ?>
-</body>
-</html>
