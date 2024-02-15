@@ -6,10 +6,12 @@
 <?php
 
 // EJERCICIO1 Defineix una variable de cada tipus: integer, double, string i boolean. Imprimeix-les per pantalla.
-integer
-double 
-string 
-boolean
+$integer = 12;
+$double = 34.54;
+$string = "Hola mundo":
+$boolean = false;
+
+echo $integer . $double . $string . $boolean;
 
 //Després crea una constant que inclogui el teu nom i mostra-ho en format títol per pantalla.
 define("nombre", "Mi nombre es Cassio, gracias");
