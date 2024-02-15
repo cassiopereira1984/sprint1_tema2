@@ -1,9 +1,8 @@
 <?php
-$X = 4;
-$Y = 5;
-$N = 6.5;
-$M = 7.5;
-
-echo "la suma es " . ($X + $Y);
-echo "la suma es " . ($N + $M);
+$var = 50;
+function isBitten($var) {
+    $bite = ($var >= 50) ? "Charlie em va mossegar el dit!" : "Charlie et mossegarà el dit";
+    return $bite;
+}
+echo isBitten();
 ?>

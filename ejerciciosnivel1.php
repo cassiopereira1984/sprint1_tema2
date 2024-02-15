@@ -84,7 +84,7 @@ function calculadora($a, $b, $mate) {
         $resultado = ($a + $b);
     } if else ($mate == "*") {
         $resultado = ($a * $b);
-    } else {
+    } if else ($mate == "/") {
         $resultado = ($a / $b);
     }
     return $resultado;
@@ -111,7 +111,7 @@ if ($nUser > 10) {
     }
 }
 
-/*Escriure una funció per verificar el grau d'un/a estudiant d'acord amb la nota.
+/*EJERCICIO 5 Escriure una funció per verificar el grau d'un/a estudiant d'acord amb la nota.
 Condicions:
 Si la nota és 60% o més, el grau hauria de ser Primera Divisió.
 Si la nota està entre 45% i 59%, el grau hauria de ser Segona Divisió.
@@ -131,4 +131,13 @@ function nota($nota) {
     return $resp;
 }
 echo "Es un estudiente de " . nota();
+
+/*EjERCICIO 6 Charlie em va mossegar el dit! Charlie et mossegarà el dit exactament el 50% del temps.
+o	Escriu La funció isBitten () que retorna TRUE amb un 50% de probabilitat i FALSE en cas contrari.*/
+$var;
+function isBitten($var) {
+    $bite = ($var >= 50) ? "Charlie em va mossegar el dit!" : "Charlie et mossegarà el dit";
+    return $bite;
+}
+echo isBitten();
 ?>
