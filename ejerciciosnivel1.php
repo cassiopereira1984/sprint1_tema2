@@ -22,9 +22,10 @@ echo $hello;
 
 //Transforma tots els caràcters de l'string a majúscules i imprimeix en pantalla.
 echo strtoupper($hello);
+//echo strtolower($hello);
 
 //Imprimeix per pantalla l'string en ordre invers de caràcters
-
+echo strrev($hello);
 
 //Imprimeix per pantalla la mida (longitud) de la variable
 echo strlen($hello);
