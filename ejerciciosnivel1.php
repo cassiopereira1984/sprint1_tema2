@@ -3,10 +3,10 @@
 // EJERCICIO1 Defineix una variable de cada tipus: integer, double, string i boolean. Imprimeix-les per pantalla.
 $integer = 12;
 $double = 34.54;
-$string = "Hola mundo":
+$string = "Hola mundo";
 $boolean = false;
 
-echo $integer . $double . $string . $boolean;
+echo $integer . " " . $double . " " . $string . " " . $boolean;
 
 //Després crea una constant que inclogui el teu nom i mostra-ho en format títol per pantalla.
 define("nombre", "Mi nombre es Cassio, gracias");
@@ -30,16 +30,18 @@ echo strlen($hello);
 
 /*o	Crea una nova variable amb el contingut “Aquest és el curs de PHP” i imprimeix per 
 pantalla la concatenació de tots dos strings.*/
-$curso = "Aquest és el curs de PHP.";
+$curso = " Aquest és el curs de PHP.";
 echo $hello . $curso;
 
 /*EJERCICIO 3 Declara dues variables X i Y de tipus int, dues variables N i M de tipus double i 
 assigna a cadascuna un valor. A continuació, mostra per pantalla per a X i Y:*/
-$X, $Y = 4, 5;
-$N, $M = 6.5, 7.5;
+$X = 4;
+$Y = 5;
+$N = 6.5;
+$M = 7.5;
 
 //El valor de cada variable.
-echo "Las variables son " . $X . $Y . $N . $M;
+echo "Las variables son " . $X . " " . $Y . " " . $N . " " . $M;
 
 //La suma.
 echo "la suma es " . ($X + $Y);
@@ -77,15 +79,15 @@ echo "La multiplicacion de la variable M es " . ($M * $M);
 i en un tercer paràmetre et permeti fer la suma, la resta, la multiplicació o la divisió dels dos nombres.*/
 function calculadora($a, $b, $mate) {
     if ($mate == "+") {
-        $resultado = $a + $b;
+        $resultado = ($a + $b);
     } if else ($mate == "-") {
-        $resultado = $a + $b;
+        $resultado = ($a + $b);
     } if else ($mate == "*") {
-        $resultado = $a * $b;
+        $resultado = ($a * $b);
     } else {
-        $resultado = $a / $b;
+        $resultado = ($a / $b);
     }
-    return $resultado
+    return $resultado;
 }
 echo "El resultado de la " . $mate . calculadora();
 
@@ -111,9 +113,22 @@ if ($nUser > 10) {
 
 /*Escriure una funció per verificar el grau d'un/a estudiant d'acord amb la nota.
 Condicions:
-o	Si la nota és 60% o més, el grau hauria de ser Primera Divisió.
-o	Si la nota està entre 45% i 59%, el grau hauria de ser Segona Divisió.
-o	Si la nota està entre 33% to 44%, el grau hauria de ser Tercera Divisió.
-o	Si la nota és menor a 33%, l'estudiant reprovarà.*/
-
+Si la nota és 60% o més, el grau hauria de ser Primera Divisió.
+Si la nota està entre 45% i 59%, el grau hauria de ser Segona Divisió.
+Si la nota està entre 33% to 44%, el grau hauria de ser Tercera Divisió.
+Si la nota és menor a 33%, l'estudiant reprovarà.*/
+$nota;
+function nota($nota) {
+    if ($nota >= 60) {
+        $resp = "Primera Divisió";
+    } if else ($nota >= 45 && $nota <= 59) {
+        $resp = "Segona Divisió";
+    } if else ($nota >= 33 && $nota <= 44) {
+        $resp = "STercera Divisió";
+    } if else ($nota <= 32) {
+        $resp = "Reprovat";
+    }
+    return $resp;
+}
+echo "Es un estudiente de " . nota();
 ?>
