@@ -78,6 +78,21 @@ echo "La multiplicacion de la variable Y es " . ($Y * $Y);
 echo "La multiplicacion de la variable N es " . ($N * $N);
 echo "La multiplicacion de la variable M es " . ($M * $M);
 
+/*Crea una funció Calculadora que entri dos nombres per paràmetre, 
+i en un tercer paràmetre et permeti fer la suma, la resta, la multiplicació o la divisió dels dos nombres.*/
+function calculadora($a, $b, $mate) {
+    if ($mate == "+") {
+        $resultado = $a + $b;
+    } if else ($mate == "-") {
+        $resultado = $a + $b;
+    } if else ($mate == "*") {
+        $resultado = $a * $b;
+    } else {
+        $resultado = $a / $b;
+    }
+    return $resultado
+}
+echo "El resultado de la " . $mate . calculadora();
 ?>
 </body>
 </html>
