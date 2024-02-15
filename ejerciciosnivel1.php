@@ -12,9 +12,10 @@ string
 boolean
 
 //Després crea una constant que inclogui el teu nom i mostra-ho en format títol per pantalla.
-define("nombre", "Cassio");
+define("nombre", "Mi nombre es Cassio, gracias");
+$titulo = ucwords(nombre);
 
-echo "Mi nombre es" . nombre ", gracias.";
+echo $titulo;
 
 //EJERCICIO 2 Imprimeix per pantalla "Hello, World!" utilitzant una variable
 $hello = "Hello World";
