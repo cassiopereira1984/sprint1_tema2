@@ -128,7 +128,7 @@ function nota($nota) {
     } else if ($nota >= 45 && $nota <= 59) {
         $resp = "Segona Divisió";
     } else if ($nota >= 33 && $nota <= 44) {
-        $resp = "STercera Divisió";
+        $resp = "   Tercera Divisió";
     } 
     else if ($nota <= 32) {
         $resp = "Reprovat";
@@ -139,7 +139,7 @@ echo "Es un estudiente de " . nota();
 
 /*EjERCICIO 6 Charlie em va mossegar el dit! Charlie et mossegarà el dit exactament el 50% del temps.
 o	Escriu La funció isBitten () que retorna TRUE amb un 50% de probabilitat i FALSE en cas contrari.*/
-$var;
+$var = rand(1, 100);
 function isBitten($var) {
     $bite = ($var >= 50) ? "Charlie em va mossegar el dit!" : "Charlie et mossegarà el dit";
     return $bite;
