@@ -77,19 +77,23 @@ echo "La multiplicacion de la variable M es " . ($M * $M);
 
 /*Crea una funció Calculadora que entri dos nombres per paràmetre, 
 i en un tercer paràmetre et permeti fer la suma, la resta, la multiplicació o la divisió dels dos nombres.*/
+$a = 1;
+$b = 2;
+$mate = "+";
 function calculadora($a, $b, $mate) {
     if ($mate == "+") {
         $resultado = ($a + $b);
-    } if else ($mate == "-") {
+    } else if ($mate == "-") {
         $resultado = ($a + $b);
-    } if else ($mate == "*") {
+    } else if ($mate == "*") {
         $resultado = ($a * $b);
-    } if else ($mate == "/") {
+    } else if ($mate == "/") {
         $resultado = ($a / $b);
     }
     return $resultado;
 }
-echo "El resultado de la " . $mate . calculadora();
+$resultado = calculadora($a, $b, $mate);
+echo "El resultado de la " . $mate . $resultado;
 
 /*Fes un programa que implementi una funció on es compti fins a un nombre determinat. Si no s’inclou un 
 nombre determinat, el nombre haurà de tenir un valor per defecte igual a 10. A més, aquesta funció ha de tenir 
@@ -140,5 +144,5 @@ function isBitten($var) {
     $bite = ($var >= 50) ? "Charlie em va mossegar el dit!" : "Charlie et mossegarà el dit";
     return $bite;
 }
-echo isBitten();
+echo isBitten($var);
 ?>
