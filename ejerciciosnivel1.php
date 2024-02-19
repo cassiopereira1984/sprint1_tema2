@@ -121,11 +121,12 @@ $nota;
 function nota($nota) {
     if ($nota >= 60) {
         $resp = "Primera Divisió";
-    } if else ($nota >= 45 && $nota <= 59) {
+    } else if ($nota >= 45 && $nota <= 59) {
         $resp = "Segona Divisió";
-    } if else ($nota >= 33 && $nota <= 44) {
+    } else if ($nota >= 33 && $nota <= 44) {
         $resp = "STercera Divisió";
-    } if else ($nota <= 32) {
+    } 
+    else if ($nota <= 32) {
         $resp = "Reprovat";
     }
     return $resp;
