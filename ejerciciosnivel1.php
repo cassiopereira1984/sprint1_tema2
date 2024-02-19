@@ -9,7 +9,7 @@ $boolean = false;
 echo $integer . " " . $double . " " . $string . " " . $boolean;
 
 //Després crea una constant que inclogui el teu nom i mostra-ho en format títol per pantalla.
-define("nombre", "Mi nombre es Cassio, gracias");
+define("NOMBRE", "Mi nombre es Cassio, gracias");
 $titulo = ucwords(nombre);
 
 echo $titulo;
