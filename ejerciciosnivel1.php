@@ -99,7 +99,19 @@ echo "El resultado de la " . $mate . $resultado;
 nombre determinat, el nombre haurà de tenir un valor per defecte igual a 10. A més, aquesta funció ha de tenir 
 un segon paràmetre que indiqui de quant a quant es compta(D'1 en 1, de 2 en 2…). El compte s’ha de mostrar per 
 pantalla pas per pas.*/
-$n = 0;
+$nUser = 10;
+$incremento = 1;
+function cuenta($nUser, $incremento) {
+    $n = 1;
+    while ($n <= $nUser) {
+        echo $n . " + " . $incremento;
+        $n += $incremento;
+        echo " = " . $n . "\n"; 
+    }
+}
+echo cuenta($nUser, $incremento);
+
+/*$n = 0;
 $nUser;
 if ($nUser > 10) {
     $while($n <= $nUser) {
@@ -113,8 +125,7 @@ if ($nUser > 10) {
         $n+2;
         echo " + 2 " . $n;
     }
-}
-
+}*/
 /*EJERCICIO 5 Escriure una funció per verificar el grau d'un/a estudiant d'acord amb la nota.
 Condicions:
 Si la nota és 60% o més, el grau hauria de ser Primera Divisió.
@@ -129,13 +140,12 @@ function nota($nota) {
         $resp = "Segona Divisió";
     } else if ($nota >= 33 && $nota <= 44) {
         $resp = "   Tercera Divisió";
-    } 
-    else if ($nota <= 32) {
+    } else if ($nota <= 32) {
         $resp = "Reprovat";
     }
     return $resp;
 }
-echo "Es un estudiente de " . nota();
+echo "Es un estudiente de " . nota($nota);
 
 /*EjERCICIO 6 Charlie em va mossegar el dit! Charlie et mossegarà el dit exactament el 50% del temps.
 o	Escriu La funció isBitten () que retorna TRUE amb un 50% de probabilitat i FALSE en cas contrari.*/
